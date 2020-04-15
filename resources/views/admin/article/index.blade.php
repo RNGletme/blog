@@ -37,7 +37,6 @@
             </div>
         </div>
     </section>
-    <p>这是测试钩子</p>
     <!-- /.content -->
 </div>
 @endsection
