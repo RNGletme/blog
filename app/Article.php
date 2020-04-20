@@ -39,11 +39,11 @@ class Article extends BaseModel
 		return $query->where('blog_user_id', $user_id);
 	}
 
-	//不属于某个专题的文章
 	public function articleTopic(){
 		return $this->hasMany(ArticleTopic::class, 'article_id', 'id');
 	}
 
+	//不属于某个专题的文章
 	public function scopeNoTopicBy(Builder $query, $topic_id){
 		return $query->doesntHave('articleTopic','and', function ($q) use ($topic_id){
 			$q->where('topic_id', $topic_id);

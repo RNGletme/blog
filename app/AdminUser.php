@@ -37,6 +37,15 @@ class AdminUser extends Authenticatable
 		return $this->isInRoles($permission->roles);
 	}
 
+	//用户是否是超级管理员
+	public function isSupperAdmin(){
+		if($this->name == 'demo'){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
 
 
 }

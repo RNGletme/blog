@@ -6,6 +6,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class BlogUser extends Authenticatable
 {
+
+	protected $table = 'blog_users';
+
 	protected $fillable = ['name', 'password', 'email', 'phone'];
 
 
@@ -47,6 +50,6 @@ class BlogUser extends Authenticatable
 	}
 
 	public function hasNotices(){
-		return $this->notices()->where('blog_user_notice.status',0)->count();
+		return !!$this->notices()->where('blog_user_notice.status',0)->count();
 	}
 }

@@ -19,6 +19,9 @@ class AppServiceProvider extends ServiceProvider
     {
     	Schema::defaultStringLength(191);
 
+	    /**
+	     * 视图组件-后台管理边栏
+	     */
     	\View::composer('layout.sidebar', function ($view){
     		$topics = Topic::all();
     		$view->with(compact('topics'));

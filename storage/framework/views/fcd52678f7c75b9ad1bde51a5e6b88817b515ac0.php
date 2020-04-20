@@ -27,7 +27,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="/adminlte/index2.html">ylaravel管理后台</a>
+        <a href="/adminlte/index2.html">Blog管理后台</a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
@@ -41,7 +41,7 @@
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input name="password" type="password" class="form-control" placeholder="pjy123456">
+                <input name="password" type="password" class="form-control" placeholder="demo123456">
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
             <div class="row">
