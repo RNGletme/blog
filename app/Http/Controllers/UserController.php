@@ -50,6 +50,7 @@ class UserController extends Controller
 				$user->name = $name;
 			}
 		}
+
 		if(request('avatar')){
 			$image = request('avatar');
 			if(preg_match('/^(data:\s*image\/(\w+);base64,)/', $image, $result)){
