@@ -56,8 +56,9 @@ class UserController extends Controller
 			if(preg_match('/^(data:\s*image\/(\w+);base64,)/', $image, $result)){
 				$type = $result[2];
 				if(in_array($type,array('jpeg','jpg','gif','bmp','png'))){
-					$up_dir = 'storage/'.$user->id.'/';
-					$new_file = $up_dir.date('YmdHis').'.'.$type;
+					$up_dir = 'storage/'.$user->id;
+					if(!file_exists($up_dir)) mkdir($up_dir);
+					$new_file = $up_dir.'/'.date('YmdHis').'.'.$type;
 					file_put_contents($new_file, base64_decode(str_replace($result[1],'', $image)));
 					$user->avatar = '/'.$new_file;
 				}
