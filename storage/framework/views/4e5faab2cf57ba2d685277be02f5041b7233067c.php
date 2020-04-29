@@ -17,6 +17,7 @@
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/wangEditor.min.css">
+    <link rel="stylesheet" typeof="text/css" href="/css/cropper.css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -37,9 +38,11 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" typeof="text/css" href="/css/cropper.css">
+<script src="/js/lib/jquery-2.2.1.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/wangEditor.min.js"></script>
+<script src="/js/lib/cropper.js"></script>
 <script src="/js/ylaravel.js"></script>
 
 </body>

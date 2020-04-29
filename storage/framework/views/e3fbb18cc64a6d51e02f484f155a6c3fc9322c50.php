@@ -28,7 +28,7 @@
             <li class="dropdown">
                 <div>
                     <?php if(Auth::user()): ?>
-                    <img src="<?php echo e(Auth::user()->avatar); ?>" alt="" class="img-rounded" style="border-radius:500px; height: 30px">
+                    <img src="<?php echo e(Auth::user()->avatar); ?>" alt="" class="img-rounded" style="border-radius:500px; height: 30px;">
                     <a href="#" class="blog-nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo e(Auth::user()->name); ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="/user/<?php echo e(Auth::id()); ?>">我的主页</a></li>

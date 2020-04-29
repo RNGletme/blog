@@ -19,9 +19,10 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">头像</label>
                     <div class="col-sm-2">
-                        <input class=" file-loading preview_input" type="file" value="用户名" style="width:200px" name="avatar">
+                        <input class=" file-loading preview_input" type="file" value="用户名" style="width:200px" name="">
                         <br>
-                        <img  id="preview_img" class="preview_img" src="<?php echo e($user->avatar); ?>" alt="" class="img-rounded" style="border-radius:500px;width:100px;height: 100px">
+                        <img  id="preview_img" class="preview_img" src="<?php echo e($user->avatar); ?>" alt="" style="max-width:480px;max-height: 270px;">
+                        <input id="postAvatar" type="text" value="" hidden name="avatar">
                     </div>
                 </div>
                 <?php echo $__env->make('layout.errorMsg', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
